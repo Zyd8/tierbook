@@ -1,0 +1,65 @@
+# Visual Studio settings
+backend/.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vscode/
+
+# Build directories
+backend/bin/
+backend/obj/
+
+# Configuration files
+*.config
+*.vsconfig
+
+# User-specific files
+*.rsuser
+*.sln.iml
+
+# Logs
+*.log
+
+# Build results
+*.dll
+*.pdb
+*.exe
+
+# Dependency folders
+backend/node_modules/
+backend/bower_components/
+backend/wwwroot/lib/
+
+# ASP.NET Scaffolding
+backend/ScaffoldingReadMe.txt
+
+# Publish results
+*.publishsettings
+backend/PublishScripts/
+backend/app.publish/
+
+# Visual Studio Code
+backend/.vscode/*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# ASP.NET Core generated files
+*.db
+*.db-shm
+*.db-wal
+
+# Local database files
+*.mdf
+*.ldf
+
+# Solution folders
+*.sln.ide
+
+# Additional folders from provided paths
+backend/.config/
+
+# Avoid tracking IDE temp files
+*.ide
