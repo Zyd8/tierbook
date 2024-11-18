@@ -47,5 +47,19 @@ namespace backend.Controllers
 
             return CreatedAtAction(nameof(GetById), new {id = userModel.Id }, userModel.ToUserDto());
         }
+
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete([FromRoute] int id)
+        {
+            var userModel = await _userRepository.DeleteAsync(id);
+
+            if (userModel == null)
+            {
+                return NotFound();
+            }
+
+            return NoContent();
+        }
     }
 }

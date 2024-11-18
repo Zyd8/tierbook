@@ -11,5 +11,6 @@ namespace backend.Interfaces
         Task<List<UserModel>> GetAllAsync();
         Task<UserModel?> GetByIdAsync(int id);
         Task<UserModel> CreateAsync(UserModel userModel);
+        Task<UserModel?> DeleteAsync(int id);
     }
 }
